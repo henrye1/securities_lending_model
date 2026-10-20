@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900 antialiased;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded bg-cyte-navy px-4 py-2 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-cyte-navyHover disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded border border-cyte-navy px-4 py-2 text-sm font-semibold uppercase tracking-wide text-cyte-navy transition hover:bg-cyte-panel disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center rounded px-2 py-1 text-sm text-cyte-navy underline-offset-2 hover:underline;
+  }
+  .card {
+    @apply rounded-md border border-slate-300 bg-white shadow-sm;
+  }
+  .section-header {
+    @apply flex items-center justify-between rounded-t-md border-b border-slate-300 bg-cyte-panel px-4 py-2 text-sm font-semibold text-cyte-navyDark;
+  }
+  .field-label {
+    @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-600;
+  }
+  .field-input {
+    @apply w-full rounded border border-slate-300 bg-white px-2 py-1.5 text-sm focus:border-cyte-navy focus:outline-none focus:ring-1 focus:ring-cyte-navy;
+  }
+  .table-head {
+    @apply bg-cyte-navy px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-white;
+  }
+  .table-cell {
+    @apply border-b border-slate-200 px-3 py-1.5 text-sm;
+  }
+  .error-banner {
+    @apply rounded border border-cyte-ragRed bg-cyte-ragRedBg px-3 py-2 text-sm font-medium text-cyte-ragRed;
+  }
+}
