@@ -35,7 +35,7 @@ def test_portfolio_four_stocks_matches_workbook():
         "risk_free_rate",
     ):
         assert getattr(c, key) == pytest.approx(exp[key], rel=1e-9), key
-    assert c.equity_lgd is None
+    assert c.equity_lgd == pytest.approx(exp["equity_lgd"], rel=1e-6)
     assert len(c.stock_values) == 10 and c.stock_values[0] == pytest.approx(13910060 * 85)
 
 
