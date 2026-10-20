@@ -17,7 +17,15 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    app.state.store = None  # set in Task 8 (MemoryStore / SupabaseStore)
+    if settings.use_supabase:
+        from app.repositories.supabase_store import SupabaseStore
+
+        app.state.store = SupabaseStore()
+    else:
+        from app.repositories.store import MemoryStore
+
+        app.state.store = MemoryStore(persist_path=settings.dev_store_path)
+
     app.include_router(router)
     return app
 
