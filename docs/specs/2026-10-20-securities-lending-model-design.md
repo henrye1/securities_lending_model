@@ -154,11 +154,16 @@ BA = (AM==0 || AX=="") ? 0 : MAX(LGD_Estimation(AX, AS, AY, FSH), 0)
   (year 1: prev_survival == 1, the `V` column).
 - `I17` covenant effectiveness = `Covenant_Loss(prev_survival, survival_k,
   LGD_estimation_k)` = #(triggered and AK>0) / #(triggered); 0 when dt=0 (k>=2).
+- Zero triggers in a year: the VBA divides by zero (`#VALUE!` through the
+  whole Results block). The app returns 0 for `I16`/`I17` (and 0 for a
+  zero-denominator `Weighted_Average`) and adds a warning naming the year.
 - `I12` SPV annual PD = `MAX(I11*I17 - I14, E32)`.
 
 ### Results block (rows 21-33)
-`Conditional_Average(P, years, v)` = mean of `v_i` for i = 1...floor(P) (VBA
-`For i = 1 To P` with double P) where `years_i < P + 0.75`.
+`Conditional_Average(P, years, v)` = mean of `v_i` for i = 1...CInt(P) (VBA
+`For i = 1 To P` coerces the bound to the Integer counter: round-half-even,
+so 2.6 years iterates 1..3 and 2.4 years 1..2) where `years_i < P + 0.75`.
+A zero denominator (no qualifying years) gives 0.
 `Weighted_Average(P, years, n1,n2,n3, d1,d2,d3)` = sum n1*n2*n3 / sum d1*d2*d3
 over the same i.
 ```
@@ -235,9 +240,12 @@ floored at 0); value-weighted dividend yield, ADTV, time to unwind, unlisted
 haircut, illiquid haircut, risk-free rate (country table), equity LGD
 (see Corporate LGD).
 
-In portfolio mode the engine takes: share value, volatility, dividend yield,
-time to unwind and the report's share count / price / yield / volatility from
-the portfolio combined outputs (see Deviation D1).
+In portfolio mode the engine takes: share value, volatility (the 20x20
+portfolio figure, also used in the unwind term `AJ`), dividend yield, time to
+unwind and the report's share count / price / yield / volatility from the
+portfolio combined outputs (see Deviation D1). The reference-entity leg stays
+workbook-literal: issuer default rates, listing and country come from the
+Input page's single Reference Share block, not from the per-stock grades.
 
 ### Corporate (Equity) LGD per stock — optional module
 VBA `Corporate_LGD_Final_Collateral_Metric("Unsecured_LGD", ...)` fed by the
@@ -290,6 +298,10 @@ reached in reasonable time, ship the app with Equity LGD = null and say so.
   illiquid haircuts (H108/H110 -> E45/E46 unreferenced), other collateral /
   pari-passu collateral fields (H77-H81), liquidity flag.
 - D4 Report date = calculation date (the sheet's `TODAY()`).
+- D5 Maturities beyond 10 years are rejected (the simulation grid stops at
+  year 10; the VBA would index past its ranges).
+- D6 Grade labels stay SB01-SB25 with the workbook's exact bounds (no
+  relabelling to the suite's RW ladder, whose bounds differ at the edges).
 
 ## Architecture (mirrors the sibling suite apps)
 
