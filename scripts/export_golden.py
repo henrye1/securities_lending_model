@@ -1,7 +1,7 @@
 """Export the workbook's cached (Excel-calculated) values for the Excelcior
 Shipping example into backend/tests/fixtures/golden_excelcior.json.
 
-Usage: python scripts/export_golden.py ["<path to .xlsm>"]
+Usage: python scripts/export_golden.py ["<path to .xlsm>" ["<output .json>"]]
 The fixture is the parity oracle for the engine tests - never hand-edit.
 """
 from __future__ import annotations
@@ -36,7 +36,7 @@ def _na(v):
     return None if v == "Not Applicable" else v
 
 
-def main(path: Path) -> None:
+def main(path: Path, out: Path = OUT) -> None:
     wb = openpyxl.load_workbook(path, data_only=True)
     inp = wb["Input"]
     calc = wb["Calculations"]
@@ -191,7 +191,7 @@ def main(path: Path) -> None:
     }
 
     fixture = {
-        "name": "Excelcior Shipping",
+        "name": inp["H12"].value,
         "inputs": inputs,
         "input_derived": {
             "unwind_years": inp["H84"].value,
@@ -203,9 +203,10 @@ def main(path: Path) -> None:
         "report": report,
         "portfolio_sheet": portfolio_sheet,
     }
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(fixture, indent=1), encoding="utf-8")
-    print("wrote", OUT)
+    fixture["source"] = path.name
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(fixture, indent=1), encoding="utf-8")
+    print("wrote", out)
     print(
         "pd_total", calculations["results"]["pd_total"],
         "combined rwa", report["combined"]["rwa_pct"],
@@ -214,4 +215,5 @@ def main(path: Path) -> None:
 
 
 if __name__ == "__main__":
-    main(Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_XLSM)
+    main(Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_XLSM,
+         Path(sys.argv[2]) if len(sys.argv) > 2 else OUT)
