@@ -45,3 +45,18 @@ body {
     @apply rounded border border-cyte-ragRed bg-cyte-ragRedBg px-3 py-2 text-sm font-medium text-cyte-ragRed;
   }
 }
+
+@media print {
+  body {
+    @apply bg-white;
+  }
+  .print-report {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  .table-head {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
