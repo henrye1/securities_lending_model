@@ -110,6 +110,16 @@ def combine(p: PortfolioInput) -> PortfolioCombined:
         c = reference.country(s.country) if s.country else None
         return float(c["risk_free_rate"]) if c and c.get("risk_free_rate") is not None else 0.0
 
+    # E93 = SUMPRODUCT(D47:M47, values) / SUM(values); a blank (errored) D47 counts as 0.
+    from app.domain.corporate_lgd import equity_lgd_for_stock  # local import: avoids a cycle
+
+    per_stock = [equity_lgd_for_stock(s) if v > 0 else None for s, v in zip(stocks, values)]
+    equity_lgd = (
+        sum((lgd or 0.0) * v for lgd, v in zip(per_stock, values)) / total
+        if total and any(lgd is not None for lgd in per_stock)
+        else None
+    )
+
     return PortfolioCombined(
         number_of_shares=shares,
         share_price=total / shares if shares else 0.0,
@@ -120,7 +130,7 @@ def combine(p: PortfolioInput) -> PortfolioCombined:
         unlisted_haircut=weighted("unlisted_haircut"),
         illiquid_haircut=weighted("illiquid_haircut"),
         risk_free_rate=sum(rf(s) * v for s, v in zip(stocks, values)) / total if total else 0.0,
-        equity_lgd=None,
+        equity_lgd=equity_lgd,
         stock_values=values,
         weights=[v / total if total else 0.0 for v in values],
     )
