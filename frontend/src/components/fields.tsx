@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 /** Label + control + hint (the Input page's "Comments" column). */
 export function Field({
@@ -84,26 +84,49 @@ export function NumberField({
   placeholder?: string;
   readOnly?: boolean;
 }) {
+  // Text input with local string state: a controlled <input type="number"> resets the DOM
+  // on every intermediate state ("1.", "-", "7.0"), swallowing decimals and minus signs.
+  const shown = value === null || value === undefined ? "" : String(round(value * scale));
+  const [text, setText] = useState(shown);
+  const [focused, setFocused] = useState(false);
+  useEffect(() => {
+    if (!focused) setText(shown);
+  }, [shown, focused]);
   if (disabled && nullable) {
     return (
       <input className="field-input bg-slate-100 text-slate-500" value="Not Applicable" readOnly />
     );
   }
-  const shown = value === null || value === undefined ? "" : String(round(value * scale));
+  void step;
   return (
     <div className="relative">
       <input
-        type="number"
-        step={step ?? (scale === 100 ? 0.01 : "any")}
-        className={clsx("field-input", (disabled || readOnly) && "bg-slate-100 text-slate-600")}
-        value={shown}
+        type="text"
+        inputMode="decimal"
+        className={clsx("field-input text-right", (disabled || readOnly) && "bg-slate-100 text-slate-600")}
+        value={focused ? text : shown}
         placeholder={placeholder}
         disabled={disabled}
         readOnly={readOnly}
+        onFocus={() => {
+          setText(shown);
+          setFocused(true);
+        }}
+        onBlur={() => {
+          setFocused(false);
+          const n = Number(text.replace(/,/g, ""));
+          if (text.trim() === "") onChange(nullable ? null : 0);
+          else if (!Number.isNaN(n)) onChange(n / scale);
+        }}
         onChange={(e) => {
           const raw = e.target.value;
-          if (raw === "") return onChange(nullable ? null : 0);
-          const n = Number(raw);
+          setText(raw);
+          if (!/^-?\d*([.,]\d*)?$/.test(raw)) return; // keep typing, commit only valid numbers
+          const n = Number(raw.replace(",", "."));
+          if (raw.trim() === "" || raw === "-" || raw === "." || raw === "-.") {
+            if (raw.trim() === "") onChange(nullable ? null : 0);
+            return;
+          }
           if (!Number.isNaN(n)) onChange(n / scale);
         }}
       />

@@ -1,6 +1,6 @@
 import type { CaptureConfig, PortfolioPayload, StockPayload, TransactionPayload } from "../../lib/api";
 import { money, num, pct, ratio } from "../../lib/format";
-import { MAX_STOCKS, emptyStock, setSymmetric, type PortfolioCombinedLite } from "../../lib/model";
+import { MAX_STOCKS, emptyStock, normaliseMatrix, removeStockAt, setSymmetric, type PortfolioCombinedLite } from "../../lib/model";
 import { NumberField, Select } from "../../components/fields";
 
 interface Props {
@@ -49,7 +49,8 @@ export function PortfolioStep({ config, payload, onChange, combined, busy, onBac
     setPortfolio({ stocks: next });
   };
   const addStock = () => stocks.length < MAX_STOCKS && setPortfolio({ stocks: [...stocks, emptyStock()] });
-  const removeStock = (i: number) => setPortfolio({ stocks: stocks.filter((_, k) => k !== i) });
+  // Drop the stock AND its row/column in all three matrices (keeps correlations aligned).
+  const removeStock = (i: number) => onChange({ ...payload, portfolio: removeStockAt(portfolio, i) });
   const countryNames = config.countries.map((c) => c.name);
   const cols = stocks.map((_, i) => i);
   const rfByCountry = Object.fromEntries(config.countries.map((c) => [c.name, c.risk_free_rate ?? 0]));
@@ -83,20 +84,21 @@ export function PortfolioStep({ config, payload, onChange, combined, busy, onBac
                   const fixed = symmetric && (i === j || j < i);
                   return (
                     <td key={j} className="px-1 py-0.5">
-                      <input
-                        type="number"
-                        step={0.01}
-                        className={"w-16 rounded border px-1 py-0.5 text-right " + (fixed ? "border-slate-200 bg-slate-100 text-slate-400" : "border-slate-300")}
-                        value={v}
-                        readOnly={fixed}
-                        onChange={(e) => {
-                          const n = Number(e.target.value);
-                          if (Number.isNaN(n)) return;
-                          const base = m.length === MAX_STOCKS ? m : Array.from({ length: MAX_STOCKS }, (_, r) => Array.from({ length: MAX_STOCKS }, (_, c) => m?.[r]?.[c] ?? (symmetric && r === c ? 1 : 0)));
-                          const next = symmetric ? setSymmetric(base, i, j, n) : base.map((row, r) => row.map((cell, c) => (r === i && c === j ? n : cell)));
-                          setPortfolio({ [key]: next } as Partial<PortfolioPayload>);
-                        }}
-                      />
+                      <div className="w-20">
+                        <NumberField
+                          value={v}
+                          readOnly={fixed}
+                          step={0.01}
+                          onChange={(raw) => {
+                            const n = raw ?? 0;
+                            const base = normaliseMatrix(m, (r, c) => (symmetric && r === c ? 1 : 0));
+                            const next = symmetric
+                              ? setSymmetric(base, i, j, n)
+                              : base.map((row, r) => row.map((cell, c) => (r === i && c === j ? n : cell)));
+                            setPortfolio({ [key]: next } as Partial<PortfolioPayload>);
+                          }}
+                        />
+                      </div>
                     </td>
                   );
                 })}

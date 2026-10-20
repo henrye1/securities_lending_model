@@ -94,3 +94,12 @@ approaches 2–3 and full portfolio-mode runs are covered by hand-derived unit
 tests (`backend/tests/domain/test_engine_rules.py`) that pin the formulas
 above, not by a workbook recalculation. Recalculate copies of the workbook
 in Excel and rerun `scripts/export_golden.py` to extend the claim.
+
+## Input validation (added after review)
+
+Calculate returns 422 (and the Input page keeps the button disabled) for: term
+<= six months (`CInt(years) < 1`, the workbook shows `#DIV/0!`), missing bullet
+or amortised interest rate, zero average daily trading volume, a portfolio
+with zero total value, and a portfolio whose correlation-matrix volatility is
+not positive (non-PSD / inconsistent matrix). Editing a transaction resets it
+to draft; reports and exports always render the run's own input snapshot.

@@ -79,7 +79,16 @@ export function InputStep({ config, payload, onChange, combined, busy, onNext, o
     set({ sectors: next.filter((s) => s.sector) });
   };
 
-  const canCalculate = payload.client_name.trim() !== "" && loanTotal > 0 && (portfolio || stockValue > 0);
+  // Mirrors the backend's validation_errors so the button is only live when a run can succeed.
+  const missing: string[] = [];
+  if (payload.client_name.trim() === "") missing.push("client name");
+  if (loanTotal <= 0) missing.push("loan amount");
+  if (!portfolio && stockValue <= 0) missing.push("shares and price");
+  if (!portfolio && payload.average_daily_volume <= 0) missing.push("average daily trading volume");
+  if (!portfolio && payload.stock_volatility <= 0) missing.push("stock volatility");
+  if (hasBullet && payload.bullet_interest_rate === null) missing.push("bullet interest rate");
+  if (hasAmort && payload.amortised_interest_rate === null) missing.push("interest rate charged");
+  const canCalculate = missing.length === 0;
 
   return (
     <div className="space-y-4">
@@ -358,9 +367,14 @@ export function InputStep({ config, payload, onChange, combined, busy, onNext, o
             Save &amp; Next: Portfolio Transactions →
           </button>
         ) : (
-          <button className="btn-primary" disabled={busy || !canCalculate} onClick={onCalculate}>
-            {busy ? "Calculating…" : "Save & Calculate →"}
-          </button>
+          <div className="flex items-center gap-3">
+            {!canCalculate && (
+              <span className="text-xs text-slate-500">Required: {missing.join(", ")}</span>
+            )}
+            <button className="btn-primary" disabled={busy || !canCalculate} onClick={onCalculate}>
+              {busy ? "Calculating…" : "Save & Calculate →"}
+            </button>
+          </div>
         )}
       </div>
     </div>

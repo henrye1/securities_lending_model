@@ -128,6 +128,35 @@ export function combinePortfolio(
   };
 }
 
+/** Pad/trim a matrix to n x n, filling missing cells from `fill(i, j)`. */
+export function normaliseMatrix(m: number[][] | undefined, fill: (i: number, j: number) => number, n = MAX_STOCKS): number[][] {
+  return Array.from({ length: n }, (_, i) =>
+    Array.from({ length: n }, (_, j) => {
+      const v = m?.[i]?.[j];
+      return v === undefined || v === null || Number.isNaN(Number(v)) ? fill(i, j) : Number(v);
+    }),
+  );
+}
+
+function dropRowCol(m: number[][], i: number, dropRow: boolean, dropCol: boolean, fill: (i: number, j: number) => number): number[][] {
+  const rows = dropRow ? m.filter((_, r) => r !== i) : m;
+  const trimmed = rows.map((row) => (dropCol ? row.filter((_, c) => c !== i) : row));
+  return normaliseMatrix(trimmed, fill);
+}
+
+/** Remove stock i and its row/column from every correlation matrix, then pad back to 10 x 10. */
+export function removeStockAt(p: PortfolioPayload, i: number): PortfolioPayload {
+  const ident = (r: number, c: number) => (r === c ? 1 : 0);
+  const zero = () => 0;
+  return {
+    stocks: p.stocks.filter((_, k) => k !== i),
+    equity_correlation: dropRowCol(normaliseMatrix(p.equity_correlation, ident), i, true, true, ident),
+    currency_correlation: dropRowCol(normaliseMatrix(p.currency_correlation, ident), i, true, true, ident),
+    // rows are currency pairs (one per stock column on the sheet), columns are stocks
+    currency_equity_correlation: dropRowCol(normaliseMatrix(p.currency_equity_correlation, zero), i, true, true, zero),
+  };
+}
+
 /** Mirror a symmetric matrix edit: set [i][j] and [j][i]. */
 export function setSymmetric(m: number[][], i: number, j: number, v: number): number[][] {
   const out = m.map((row) => [...row]);

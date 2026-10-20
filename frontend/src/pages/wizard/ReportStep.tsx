@@ -17,7 +17,9 @@ const REPORT_ROWS: { key: keyof ReportColumn; label: string; render: (v: number 
   { key: "rwa_pct", label: "RWA%", render: (v) => pct(v as number) },
 ];
 
-export function ReportStep({ tx, run }: Props) {
+export function ReportStep({ tx: live, run }: Props) {
+  // Runs are immutable snapshots: render the inputs captured at calculation time.
+  const tx: Transaction = { ...live, ...run.inputs };
   const { report, derived, report_date } = run.result;
   const amortLabel =
     tx.structure === "Interest Only Repayments" ? "Interest Only Loan Amount" : "Amortised Loan Amount";
