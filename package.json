@@ -1,0 +1,11 @@
+{
+  "name": "securities-lending-model",
+  "private": true,
+  "description": "Convenience scripts - the real frontend package lives in frontend/",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "install-frontend": "npm --prefix frontend install",
+    "backend": "backend\.venv\Scripts\python -m uvicorn app.main:app --port 8003 --app-dir backend"
+  }
+}
