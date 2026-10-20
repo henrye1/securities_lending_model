@@ -1,0 +1,1255 @@
+[
+ {
+  "name": "South Africa",
+  "insolvency_score": 1.843243243243243,
+  "recovery_cost": 0.02,
+  "risk_free_rate": 0.07,
+  "africa_adjust": null
+ },
+ {
+  "name": "China",
+  "insolvency_score": 2.967567567567568,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.03485999999999999,
+  "africa_adjust": null
+ },
+ {
+  "name": "Japan",
+  "insolvency_score": 1.518918918918919,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00359,
+  "africa_adjust": null
+ },
+ {
+  "name": "U.K.",
+  "insolvency_score": 1.1513513513513514,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.035,
+  "africa_adjust": null
+ },
+ {
+  "name": "U.S.",
+  "insolvency_score": 1.08648648648649,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.028522727272727276,
+  "africa_adjust": null
+ },
+ {
+  "name": "Afghanistan",
+  "insolvency_score": 4.632432432432433,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Albania",
+  "insolvency_score": 2.8378378378378377,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Algeria",
+  "insolvency_score": 4.286486486486487,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Angola",
+  "insolvency_score": 4.718918918918919,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.07768,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Antigua and Barbuda",
+  "insolvency_score": 2.3621621621621625,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Argentina",
+  "insolvency_score": 3.6810810810810812,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Armenia",
+  "insolvency_score": 1.691891891891892,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Australia",
+  "insolvency_score": 1.2162162162162162,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.02376,
+  "africa_adjust": null
+ },
+ {
+  "name": "Austria",
+  "insolvency_score": 1.627027027027027,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00311,
+  "africa_adjust": null
+ },
+ {
+  "name": "Azerbaijan",
+  "insolvency_score": 2.448648648648649,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Bahamas",
+  "insolvency_score": 2.6648648648648647,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Bahrain",
+  "insolvency_score": 1.9081081081081082,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Bangladesh",
+  "insolvency_score": 3.789189189189189,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Barbados",
+  "insolvency_score": 2.902702702702703,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Belarus",
+  "insolvency_score": 2.254054054054054,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Belgium",
+  "insolvency_score": 1.7135135135135136,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00436,
+  "africa_adjust": null
+ },
+ {
+  "name": "Belize",
+  "insolvency_score": 3.27027027027027,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Benin",
+  "insolvency_score": 4.783783783783784,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Bhutan",
+  "insolvency_score": 4.2,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Bolivia",
+  "insolvency_score": 4.351351351351352,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Bosnia and Herzegovinia",
+  "insolvency_score": 3.7243243243243245,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": null
+ },
+ {
+  "name": "Botswana",
+  "insolvency_score": 2.275675675675676,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.0775,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Brazil",
+  "insolvency_score": 3.810810810810811,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.1275,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Brunei",
+  "insolvency_score": 2.708108108108108,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Bulgaria",
+  "insolvency_score": 2.427027027027027,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.026000000000000002,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Burkina Faso",
+  "insolvency_score": 4.308108108108108,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Burundi",
+  "insolvency_score": 4.437837837837838,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Cambodia",
+  "insolvency_score": 3.8756756756756756,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Cameroon",
+  "insolvency_score": 4.481081081081081,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Canada",
+  "insolvency_score": 1.3675675675675676,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01373,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Cape Verde",
+  "insolvency_score": 3.637837837837838,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Central African Republic",
+  "insolvency_score": 5,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Chad",
+  "insolvency_score": 4.978378378378379,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Chile",
+  "insolvency_score": 1.8,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.045,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Colombia",
+  "insolvency_score": 1.972972972972973,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.06755,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Comoros",
+  "insolvency_score": 4.416216216216216,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Congo",
+  "insolvency_score": 4.9135135135135135,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Costa Rica",
+  "insolvency_score": 3.3783783783783785,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Cote d'Ivoire",
+  "insolvency_score": 4.827027027027027,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Croatia",
+  "insolvency_score": 2.8162162162162163,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.03129,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Cyprus",
+  "insolvency_score": 1.7783783783783784,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Czech Republic",
+  "insolvency_score": 2.4054054054054053,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0043,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Denmark",
+  "insolvency_score": 1.1081081081081081,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00292,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Djibouti",
+  "insolvency_score": 4.697297297297297,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Dominica",
+  "insolvency_score": 2.4702702702702704,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Dominican Republic",
+  "insolvency_score": 3.5081081081081082,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Ecuador",
+  "insolvency_score": 4.005405405405405,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Egypt",
+  "insolvency_score": 3.3567567567567567,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.1445,
+  "africa_adjust": 1
+ },
+ {
+  "name": "El Salvador",
+  "insolvency_score": 3.443243243243243,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Equatorial",
+  "insolvency_score": 4.502702702702703,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Eritrea",
+  "insolvency_score": 4.935135135135136,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Estonia",
+  "insolvency_score": 1.454054054054054,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Ethiopia",
+  "insolvency_score": 3.745945945945946,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Fiji",
+  "insolvency_score": 2.2972972972972974,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Finland",
+  "insolvency_score": 1.2378378378378379,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00295,
+  "africa_adjust": 0
+ },
+ {
+  "name": "France",
+  "insolvency_score": 1.7351351351351352,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00459,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Gabon",
+  "insolvency_score": 4.675675675675675,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Gambia",
+  "insolvency_score": 4.178378378378378,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Georgia",
+  "insolvency_score": 1.1945945945945946,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Germany",
+  "insolvency_score": 1.4324324324324325,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0017100000000000001,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Ghana",
+  "insolvency_score": 2.383783783783784,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.1925,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Greece",
+  "insolvency_score": 2.686486486486486,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.11193,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Grenada",
+  "insolvency_score": 3.1621621621621623,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Guatemala",
+  "insolvency_score": 3.0108108108108107,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Guinea",
+  "insolvency_score": 4.848648648648648,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Guinea-Bissau",
+  "insolvency_score": 4.87027027027027,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Guyana",
+  "insolvency_score": 3.464864864864865,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Haiti",
+  "insolvency_score": 4.762162162162163,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Honduras",
+  "insolvency_score": 3.7027027027027026,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Hong Kong",
+  "insolvency_score": 1.0432432432432432,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01485,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Hungary",
+  "insolvency_score": 2.1675675675675676,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0325,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Iceland",
+  "insolvency_score": 1.3027027027027027,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.06855,
+  "africa_adjust": 0
+ },
+ {
+  "name": "India",
+  "insolvency_score": 3.854054054054054,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.07776,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Indonesia",
+  "insolvency_score": 3.7675675675675677,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.07218,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Iran",
+  "insolvency_score": 4.135135135135135,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Iraq",
+  "insolvency_score": 4.5675675675675675,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Ireland",
+  "insolvency_score": 1.3243243243243243,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0073,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Israel",
+  "insolvency_score": 1.8216216216216217,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01467,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Italy",
+  "insolvency_score": 2.5783783783783782,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01288,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Jamaica",
+  "insolvency_score": 2.945945945945946,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Jordan",
+  "insolvency_score": 3.291891891891892,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Kazakhstan",
+  "insolvency_score": 2.0594594594594593,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Kenya",
+  "insolvency_score": 3.616216216216216,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.05875,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Kiribati",
+  "insolvency_score": 3.5297297297297296,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Korea",
+  "insolvency_score": 1.172972972972973,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Kosovo",
+  "insolvency_score": 3.118918918918919,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Kuwait",
+  "insolvency_score": 2.7729729729729735,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Kyrgyz",
+  "insolvency_score": 2.5135135135135136,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Lao PDR",
+  "insolvency_score": 4.524324324324324,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Latvia",
+  "insolvency_score": 1.5405405405405406,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00549,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Lebanon",
+  "insolvency_score": 3.4864864864864864,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Lesotho",
+  "insolvency_score": 3.9405405405405407,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.0925,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Liberia",
+  "insolvency_score": 4.221621621621621,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Lithuania",
+  "insolvency_score": 1.5837837837837838,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00849,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Luxembourg",
+  "insolvency_score": 2.210810810810811,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Macedonia",
+  "insolvency_score": 1.4972972972972973,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Madagascar",
+  "insolvency_score": 4.070270270270271,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Malawi",
+  "insolvency_score": 4.3945945945945954,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Malaysia",
+  "insolvency_score": 1.2594594594594595,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.03866,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Maldives",
+  "insolvency_score": 3.054054054054054,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Mali",
+  "insolvency_score": 4.264864864864864,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Malta",
+  "insolvency_score": 3.2054054054054055,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Marshall Islands",
+  "insolvency_score": 3.1837837837837837,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Mauritania",
+  "insolvency_score": 4.610810810810811,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Mauritius",
+  "insolvency_score": 1.4108108108108108,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.10333333333333333,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Mexico",
+  "insolvency_score": 2.037837837837838,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0572,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Micronesia",
+  "insolvency_score": 4.243243243243244,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Moldova",
+  "insolvency_score": 2.794594594594595,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Mongolia",
+  "insolvency_score": 2.6432432432432433,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Montenegro",
+  "insolvency_score": 2.102702702702703,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Morocco",
+  "insolvency_score": 3.097297297297297,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Mozambique",
+  "insolvency_score": 4.1567567567567565,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Namibia",
+  "insolvency_score": 2.8810810810810814,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.0775,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Nepal",
+  "insolvency_score": 3.3351351351351353,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Netherlands",
+  "insolvency_score": 1.6702702702702703,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.00247,
+  "africa_adjust": 0
+ },
+ {
+  "name": "New Zealand",
+  "insolvency_score": 1.0648648648648649,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.03205,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Nicaragua",
+  "insolvency_score": 3.572972972972973,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Niger",
+  "insolvency_score": 4.805405405405406,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Nigeria",
+  "insolvency_score": 3.8324324324324324,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.15539999999999998,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Norway",
+  "insolvency_score": 1.1297297297297297,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01421,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Oman",
+  "insolvency_score": 2.0162162162162165,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Pakistan",
+  "insolvency_score": 3.3135135135135134,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.09401,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Palau",
+  "insolvency_score": 3.4,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Panama",
+  "insolvency_score": 2.3189189189189188,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Papua New Guinea",
+  "insolvency_score": 3.2486486486486488,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Paraguay",
+  "insolvency_score": 3.227027027027027,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Peru",
+  "insolvency_score": 1.9297297297297298,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Philippines",
+  "insolvency_score": 3.983783783783784,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04167,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Poland",
+  "insolvency_score": 2.1891891891891895,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0231,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Portugal",
+  "insolvency_score": 1.6486486486486487,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01641,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Puerto Rico",
+  "insolvency_score": 1.8864864864864868,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Qatar",
+  "insolvency_score": 1.864864864864865,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.02595,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Romania",
+  "insolvency_score": 2.556756756756757,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.032,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Russia",
+  "insolvency_score": 3.4216216216216218,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.1125,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Rwanda",
+  "insolvency_score": 2.1243243243243244,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Samoa",
+  "insolvency_score": 2.2324324324324323,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Sao Tome",
+  "insolvency_score": 4.45945945945946,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Saudi Arabia",
+  "insolvency_score": 1.4756756756756757,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Senegal",
+  "insolvency_score": 4.58918918918919,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Serbia",
+  "insolvency_score": 2.8594594594594596,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Seychelles",
+  "insolvency_score": 2.6,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Sierra Loene",
+  "insolvency_score": 4.027027027027027,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Singapore",
+  "insolvency_score": 1.0216216216216216,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0325,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Slovak Rep.",
+  "insolvency_score": 1.9945945945945946,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Slovenia",
+  "insolvency_score": 1.7567567567567568,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.010509999999999999,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Solomon Islands",
+  "insolvency_score": 2.9891891891891893,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Spain",
+  "insolvency_score": 1.9513513513513514,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.01264,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Sri Lanka",
+  "insolvency_score": 2.7513513513513517,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Sudan",
+  "insolvency_score": 4.091891891891892,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Suriname",
+  "insolvency_score": 4.545945945945947,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Swaziland",
+  "insolvency_score": 3.6594594594594594,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.085,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Sweden",
+  "insolvency_score": 1.281081081081081,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0039000000000000003,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Switzerland",
+  "insolvency_score": 1.6054054054054054,
+  "recovery_cost": 0.03,
+  "risk_free_rate": -0.00097,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Syria",
+  "insolvency_score": 4.113513513513514,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Tajikistan",
+  "insolvency_score": 4.048648648648649,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Tanzania",
+  "insolvency_score": 3.8972972972972975,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.10458333333333335,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Thailand",
+  "insolvency_score": 1.3891891891891892,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.0269,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Timor-Leste",
+  "insolvency_score": 4.654054054054054,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Togo",
+  "insolvency_score": 4.372972972972972,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Tonga",
+  "insolvency_score": 2.3405405405405406,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Trinidad & Tobago",
+  "insolvency_score": 2.4918918918918918,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Tunisia",
+  "insolvency_score": 2.081081081081081,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Turkey",
+  "insolvency_score": 2.5351351351351354,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.07835999999999999,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Uganda",
+  "insolvency_score": 3.5945945945945947,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.13,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Ukraine",
+  "insolvency_score": 3.962162162162162,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "United Arab Emirates",
+  "insolvency_score": 1.5621621621621622,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Uruguay",
+  "insolvency_score": 2.924324324324324,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Uzbekistan",
+  "insolvency_score": 4.3297297297297295,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Vanuatu",
+  "insolvency_score": 2.72972972972973,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Venezuela",
+  "insolvency_score": 4.891891891891892,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Vietnam",
+  "insolvency_score": 3.1405405405405404,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.06521,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Yemen",
+  "insolvency_score": 3.5513513513513515,
+  "recovery_cost": 0.03,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 0
+ },
+ {
+  "name": "Zambia",
+  "insolvency_score": 3.0324324324324325,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.12625,
+  "africa_adjust": 1
+ },
+ {
+  "name": "Zimbabwe",
+  "insolvency_score": 4.718918918918919,
+  "recovery_cost": 0.055,
+  "risk_free_rate": 0.04,
+  "africa_adjust": 1
+ }
+]

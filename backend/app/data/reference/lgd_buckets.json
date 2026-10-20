@@ -1,0 +1,65 @@
+[
+ {
+  "bucket": 1,
+  "lower": 0,
+  "upper": 0.1,
+  "label": "0% - 10%",
+  "fitted": 0.01
+ },
+ {
+  "bucket": 2,
+  "lower": 0.1,
+  "upper": 0.15,
+  "label": "10% - 15%",
+  "fitted": 0.11
+ },
+ {
+  "bucket": 3,
+  "lower": 0.15,
+  "upper": 0.25,
+  "label": "15% - 25%",
+  "fitted": 0.21
+ },
+ {
+  "bucket": 4,
+  "lower": 0.25,
+  "upper": 0.35,
+  "label": "25% - 35%",
+  "fitted": 0.31
+ },
+ {
+  "bucket": 5,
+  "lower": 0.35,
+  "upper": 0.45,
+  "label": "35% - 45%",
+  "fitted": 0.41
+ },
+ {
+  "bucket": 6,
+  "lower": 0.45,
+  "upper": 0.6,
+  "label": "45% - 60%",
+  "fitted": 0.53
+ },
+ {
+  "bucket": 7,
+  "lower": 0.6,
+  "upper": 0.75,
+  "label": "60% - 75%",
+  "fitted": 0.68
+ },
+ {
+  "bucket": 8,
+  "lower": 0.75,
+  "upper": 0.9,
+  "label": "75% - 90%",
+  "fitted": 0.81
+ },
+ {
+  "bucket": 9,
+  "lower": 0.9,
+  "upper": null,
+  "label": ">90%",
+  "fitted": 1.02
+ }
+]

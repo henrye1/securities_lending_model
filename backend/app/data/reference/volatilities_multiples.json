@@ -1,0 +1,130 @@
+{
+ "AGRICULTURE_AND_FORESTRY Revenue <= R500m": {
+  "asset_vol": 0.17844238475218285,
+  "earnings_multiple": 11.337422609980676
+ },
+ "AGRICULTURE_AND_FORESTRY Revenue > R500m": {
+  "asset_vol": 0.17844238475218285,
+  "earnings_multiple": 7.026987501785221
+ },
+ "BUILDING_AND_CONSTRUCTION Revenue <= R500m": {
+  "asset_vol": 0.21677647873583947,
+  "earnings_multiple": 6.7632464753888115
+ },
+ "BUILDING_AND_CONSTRUCTION Revenue > R500m": {
+  "asset_vol": 0.19192513638763006,
+  "earnings_multiple": 6.7632464753888115
+ },
+ "FINANCIAL_INSTITUTIONSRevenue <= R500m": {
+  "asset_vol": 0.3435218283976555,
+  "earnings_multiple": 9.446778131999999
+ },
+ "FINANCIAL_INSTITUTIONSRevenue > R500m": {
+  "asset_vol": 0.20275243755170483,
+  "earnings_multiple": 8.096289240499997
+ },
+ "HEALTHCARE Revenue <= R500m": {
+  "asset_vol": 0.2686569209524511,
+  "earnings_multiple": 8.553601371557235
+ },
+ "HEALTHCARE Revenue > R500m": {
+  "asset_vol": 0.19145474649830818,
+  "earnings_multiple": 8.508311213446724
+ },
+ "INDUSTRIALS Revenue <= R500m": {
+  "asset_vol": 0.3181234917666552,
+  "earnings_multiple": 7.438864103267559
+ },
+ "INDUSTRIALS Revenue > R500m": {
+  "asset_vol": 0.18552408429013784,
+  "earnings_multiple": 7.438864103267559
+ },
+ "MINING_AND_METALS Revenue <= R500m": {
+  "asset_vol": 0.2844098183507218,
+  "earnings_multiple": 6.485092554193199
+ },
+ "MINING_AND_METALS Revenue > R500m": {
+  "asset_vol": 0.23331749614839997,
+  "earnings_multiple": 6.485092554193199
+ },
+ "OIL_AND_GAS Revenue <= R500m": {
+  "asset_vol": 0.2977578293387413,
+  "earnings_multiple": 10.6902491
+ },
+ "OIL_AND_GAS Revenue > R500m": {
+  "asset_vol": 0.2743180794026015,
+  "earnings_multiple": 7.3513014
+ },
+ "POWER_AND_INFRASTRUCTURE Revenue <= R500m": {
+  "asset_vol": 0.2528795767300937,
+  "earnings_multiple": 11.068627403965532
+ },
+ "POWER_AND_INFRASTRUCTURE Revenue > R500m": {
+  "asset_vol": 0.16262480085423137,
+  "earnings_multiple": 7.986837187881106
+ },
+ "REAL_ESTATE: Commercial Revenue <= R500m": {
+  "asset_vol": 0.2935,
+  "earnings_multiple": 19.8623644
+ },
+ "REAL_ESTATE: Commercial Revenue > R500m": {
+  "asset_vol": 0.2224,
+  "earnings_multiple": 17.2648396
+ },
+ "REAL_ESTATE: Industrial Revenue <= R500m": {
+  "asset_vol": 0.2935,
+  "earnings_multiple": 19.8623644
+ },
+ "REAL_ESTATE: Industrial Revenue > R500m": {
+  "asset_vol": 0.2224,
+  "earnings_multiple": 17.2648396
+ },
+ "REAL_ESTATE: Residential Revenue <= R500m": {
+  "asset_vol": 0.2935,
+  "earnings_multiple": 19.8623644
+ },
+ "REAL_ESTATE: Residential Revenue > R500m": {
+  "asset_vol": 0.2224,
+  "earnings_multiple": 17.2648396
+ },
+ "REAL_ESTATE: Retail Revenue <= R500m": {
+  "asset_vol": 0.2935,
+  "earnings_multiple": 19.8623644
+ },
+ "REAL_ESTATE: Retail Revenue > R500m": {
+  "asset_vol": 0.2224,
+  "earnings_multiple": 17.2648396
+ },
+ "RETAIL_AND_CONSUMER Revenue <= R500m": {
+  "asset_vol": 0.2280072231131841,
+  "earnings_multiple": 10.7123728
+ },
+ "RETAIL_AND_CONSUMER Revenue > R500m": {
+  "asset_vol": 0.19283834353600354,
+  "earnings_multiple": 10.148333
+ },
+ "TELECOMS_AND_MEDIA Revenue <= R500m": {
+  "asset_vol": 0.23518321651714805,
+  "earnings_multiple": 6.258232711423754
+ },
+ "TELECOMS_AND_MEDIA Revenue > R500m": {
+  "asset_vol": 0.17393033403489536,
+  "earnings_multiple": 6.183387624905844
+ },
+ "PUBLIC_SECTOR Revenue <= R500m": {
+  "asset_vol": 0.2652033494862058,
+  "earnings_multiple": 9.446778131999999
+ },
+ "PUBLIC_SECTOR Revenue > R500m": {
+  "asset_vol": 0.2008691594803713,
+  "earnings_multiple": 8.096289240499997
+ },
+ "OTHER Revenue <= R500m": {
+  "asset_vol": 0.2652033494862058,
+  "earnings_multiple": 9.446778131999999
+ },
+ "OTHER Revenue > R500m": {
+  "asset_vol": 0.2008691594803713,
+  "earnings_multiple": 8.096289240499997
+ }
+}

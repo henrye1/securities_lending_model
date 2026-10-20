@@ -1,0 +1,170 @@
+[
+ {
+  "grade": "SB01",
+  "fitted_pd": 0.0001,
+  "lower": 0,
+  "upper": 0.00012
+ },
+ {
+  "grade": "SB02",
+  "fitted_pd": 0.00014,
+  "lower": 0.00012,
+  "upper": 0.00017
+ },
+ {
+  "grade": "SB03",
+  "fitted_pd": 0.0002,
+  "lower": 0.00017,
+  "upper": 0.00024
+ },
+ {
+  "grade": "SB04",
+  "fitted_pd": 0.00029,
+  "lower": 0.00024,
+  "upper": 0.00034
+ },
+ {
+  "grade": "SB05",
+  "fitted_pd": 0.0004,
+  "lower": 0.00034,
+  "upper": 0.00048
+ },
+ {
+  "grade": "SB06",
+  "fitted_pd": 0.00057,
+  "lower": 0.00048,
+  "upper": 0.00067
+ },
+ {
+  "grade": "SB07",
+  "fitted_pd": 0.0008,
+  "lower": 0.00067,
+  "upper": 0.00095
+ },
+ {
+  "grade": "SB08",
+  "fitted_pd": 0.00113,
+  "lower": 0.00095,
+  "upper": 0.00135
+ },
+ {
+  "grade": "SB09",
+  "fitted_pd": 0.0016,
+  "lower": 0.00135,
+  "upper": 0.0019
+ },
+ {
+  "grade": "SB10",
+  "fitted_pd": 0.00226,
+  "lower": 0.0019,
+  "upper": 0.00269
+ },
+ {
+  "grade": "SB11",
+  "fitted_pd": 0.0032,
+  "lower": 0.00269,
+  "upper": 0.00381
+ },
+ {
+  "grade": "SB12",
+  "fitted_pd": 0.00453,
+  "lower": 0.00381,
+  "upper": 0.00538
+ },
+ {
+  "grade": "SB13",
+  "fitted_pd": 0.0064,
+  "lower": 0.00538,
+  "upper": 0.00761
+ },
+ {
+  "grade": "SB14",
+  "fitted_pd": 0.00905,
+  "lower": 0.00761,
+  "upper": 0.01076
+ },
+ {
+  "grade": "SB15",
+  "fitted_pd": 0.0128,
+  "lower": 0.01076,
+  "upper": 0.01522
+ },
+ {
+  "grade": "SB16",
+  "fitted_pd": 0.0181,
+  "lower": 0.01522,
+  "upper": 0.02153
+ },
+ {
+  "grade": "SB17",
+  "fitted_pd": 0.0256,
+  "lower": 0.02153,
+  "upper": 0.03044
+ },
+ {
+  "grade": "SB18",
+  "fitted_pd": 0.0362,
+  "lower": 0.03044,
+  "upper": 0.04305
+ },
+ {
+  "grade": "SB19",
+  "fitted_pd": 0.0512,
+  "lower": 0.04305,
+  "upper": 0.06089
+ },
+ {
+  "grade": "SB20",
+  "fitted_pd": 0.07241,
+  "lower": 0.06089,
+  "upper": 0.08611
+ },
+ {
+  "grade": "SB21",
+  "fitted_pd": 0.1024,
+  "lower": 0.08611,
+  "upper": 0.12177
+ },
+ {
+  "grade": "SB22",
+  "fitted_pd": 0.14481,
+  "lower": 0.12177,
+  "upper": 0.17222
+ },
+ {
+  "grade": "SB23",
+  "fitted_pd": 0.2048,
+  "lower": 0.17222,
+  "upper": 0.24355
+ },
+ {
+  "grade": "SB24",
+  "fitted_pd": 0.28963,
+  "lower": 0.24355,
+  "upper": 0.34443
+ },
+ {
+  "grade": "SB25",
+  "fitted_pd": 0.40961,
+  "lower": 0.34443,
+  "upper": 0.99999
+ },
+ {
+  "grade": "D1",
+  "fitted_pd": 0.999999999999999,
+  "lower": 0.999999999999999,
+  "upper": 0.999999999999999
+ },
+ {
+  "grade": "D2",
+  "fitted_pd": 0.999999999999999,
+  "lower": 0.999999999999999,
+  "upper": 0.999999999999999
+ },
+ {
+  "grade": "D3",
+  "fitted_pd": 0.999999999999999,
+  "lower": 0.999999999999999,
+  "upper": 0.999999999999999
+ }
+]
