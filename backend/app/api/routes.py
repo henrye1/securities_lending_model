@@ -117,7 +117,21 @@ def update_transaction(
     tx_id: str, body: TransactionCreate, store: Store = Depends(get_store)
 ) -> Transaction:
     tx = _get_tx(store, tx_id)
-    updated = tx.model_copy(update={**body.model_dump(), "updated_at": now()})
+    # model_validate (not model_copy) so nested lists are re-validated into models,
+    # and an edited transaction goes back to draft until it is recalculated.
+    updated = Transaction.model_validate(
+        {
+            **tx.model_dump(),
+            **body.model_dump(),
+            "updated_at": now(),
+            "status": "draft",
+            "latest_run_id": None,
+            "latest_pd": None,
+            "latest_risk_grade": None,
+            "latest_lgd": None,
+            "latest_el": None,
+        }
+    )
     return store.update_transaction(updated)
 
 

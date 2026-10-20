@@ -115,6 +115,8 @@ def _slug(text: str) -> str:
 
 
 def export_run(tx: Transaction, run: Run) -> tuple[str, bytes]:
+    # Runs are immutable snapshots: render from the inputs captured at calculation time.
+    tx = Transaction.model_validate({**tx.model_dump(mode="json"), **run.inputs})
     res = run.result
     derived, report, results, years = res["derived"], res["report"], res["results"], res["years"]
     wb = Workbook()

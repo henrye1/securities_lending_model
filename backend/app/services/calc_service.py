@@ -9,6 +9,7 @@ from dataclasses import asdict
 from app.domain import grades, reference
 from app.domain.duration import equity_duration, liquidity_flag
 from app.domain.engine import run_engine
+from app.domain.mathx import vba_cint
 from app.domain.models import EngineInputs, build_dcr_schedule
 from app.domain.portfolio import PortfolioCombined, PortfolioInput, StockInput, combine
 from app.repositories.store import Store, new_id, now
@@ -35,6 +36,11 @@ def validation_errors(tx: TransactionCreate) -> list[str]:
         errors.append("Maturity date must be after the start date")
     elif _yearfrac(tx) > MAX_YEARS:
         errors.append("Maturity must be within 10 years of the start date (the model's horizon)")
+    elif vba_cint(_yearfrac(tx)) < 1:
+        errors.append(
+            "The term must exceed six months: the model's Conditional/Weighted averages "
+            "iterate CInt(years) times and would cover no year at all"
+        )
     amort = tx.amortised_loan_amount or 0.0
     bullet = tx.bullet_loan_amount or 0.0
     if tx.structure == "Bullet Payment" and bullet <= 0:
@@ -43,12 +49,30 @@ def validation_errors(tx: TransactionCreate) -> list[str]:
         errors.append("Amortised / Interest Only Loan Amount is required for this structure")
     if tx.structure == "Straight Amortisation & Bullet" and (amort <= 0 or bullet <= 0):
         errors.append("Both the amortised and the bullet loan amounts are required")
+    has_bullet = tx.structure in ("Bullet Payment", "Straight Amortisation & Bullet")
+    has_amort = tx.structure != "Bullet Payment"
+    if has_bullet and tx.bullet_interest_rate is None:
+        errors.append("Current Interest Rate on Bullet Loan is required")
+    if has_amort and tx.amortised_interest_rate is None:
+        errors.append("Current Interest Rate Charged on the amortised / interest-only loan is required")
     if tx.portfolio_of_shares:
         if not tx.portfolio or not tx.portfolio.stocks:
             errors.append("Portfolio of Shares is Yes but no stocks were captured")
+        else:
+            port = _portfolio(tx)
+            total = sum(port.stock_values) if port else 0.0
+            if total <= 0:
+                errors.append("Portfolio total stock value must be positive (shares x price per stock)")
+            elif port.stock_volatility <= 0:
+                errors.append(
+                    "Portfolio volatility is not positive: check the stock volatilities and that the "
+                    "correlation matrix is valid (symmetric, entries in [-1, 1], positive semi-definite)"
+                )
     else:
         if tx.number_of_shares <= 0 or tx.share_price <= 0:
             errors.append("Number of Shares and Share Price must be positive")
+        if tx.average_daily_volume <= 0:
+            errors.append("Average Daily Trading Volumes must be positive (drives the time to unwind)")
     if tx.risk_grade not in reference.issuer_default_rates():
         errors.append(f"Unknown risk grade '{tx.risk_grade}'")
     if reference.country(tx.reference_country) is None:
