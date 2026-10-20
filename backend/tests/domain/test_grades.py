@@ -8,7 +8,8 @@ def test_grade_lookup():
     assert grade_for(0.004262571228595757) == "SB12"
     assert grade_for(0.0) == "SB01"
     assert grade_for(0.00012) == "SB02"
-    assert grade_for(0.9999999999) == "D1"
+    assert grade_for(0.9999999999) == "SB25"  # D1 lower bound is 0.999999999999999
+    assert grade_for(1.0) == "D1"
 
 
 def test_fitted_pd():
