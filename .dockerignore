@@ -1,0 +1,13 @@
+.git
+*.xlsm
+**/node_modules
+**/.venv
+**/dist
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+backend/dev_store.json
+.env
+.env.local
+docs
+.superpowers

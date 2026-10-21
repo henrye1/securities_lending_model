@@ -71,6 +71,27 @@ set, the Simulation distribution) — never hand-edit either. See
 the documented deviations and how a custom `random_seed` switches to clean
 formulas.
 
+## Deploy (Render + Supabase)
+
+One Render web service hosts API and UI: the root `Dockerfile` builds the
+React app and the FastAPI backend serves it (`FRONTEND_DIST`), so there is a
+single origin and no CORS. `render.yaml` is a Render Blueprint for it.
+
+1. Supabase: create a project, run `supabase/migrations/0001_init.sql` in the
+   SQL editor, copy the project URL and the **service_role** key.
+2. Render: *New → Blueprint*, pick this repo; set `SUPABASE_URL` and
+   `SUPABASE_SERVICE_ROLE_KEY` when prompted (both marked `sync: false`).
+3. Health check is `/api/health`. Without the Supabase vars the service still
+   boots on the JSON store, but that file lives on the container disk and is
+   wiped on every deploy.
+
+Local check of the production shape:
+
+```bash
+npm run build
+cd backend && FRONTEND_DIST=../frontend/dist .venv\Scripts\python -m uvicorn app.main:app --port 8003
+```
+
 ## Repo map
 
 ```
@@ -81,15 +102,16 @@ backend/tests/           golden parity + engine rules + API flow + export
 frontend/                React 19 + Vite + Tailwind (CYTE Risk Suite UI)
 scripts/                 export_reference / export_golden
 supabase/                migration (batches / transactions / runs, RLS on)
+Dockerfile, render.yaml  single-service Render deploy (API + built UI)
 docs/specs/              design spec + parity notes
 docs/superpowers/plans/  implementation plan
 ```
 
 ## Not done yet (deliberate)
 
-- **Supabase project**: the store and migration are in place but no project
-  has been created or linked (needs owner credentials); the JSON dev store is
-  the default.
+- **Supabase project**: the store, migration and Render blueprint are in
+  place but no project has been created or linked (needs owner credentials);
+  the JSON dev store is the default and `SupabaseStore` is untested live.
 - **Extra Excel-recalculated fixtures**: only the Excelcior case carries
   cached outputs, so amortising structures, DCR schedules, cover-linked
   rates, currency mismatch, unlisted shares, fractional maturities and

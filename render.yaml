@@ -1,0 +1,19 @@
+# Render Blueprint - one web service hosting API + UI (Dockerfile at repo root).
+# Persistence: Supabase (set the two secrets in the Render dashboard; apply
+# supabase/migrations/0001_init.sql in the Supabase SQL editor first).
+services:
+  - type: web
+    name: securities-lending-model
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: FRONTEND_DIST
+        value: /app/frontend/dist
+      - key: CORS_ORIGINS
+        value: ""

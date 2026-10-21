@@ -23,6 +23,10 @@ class Settings(BaseSettings):
         default_factory=lambda: ["http://localhost:5176"]
     )
     dev_store_path: str = "./dev_store.json"
+    # Production: directory of the built frontend (frontend/dist). When set and
+    # present, the backend serves the SPA itself so one Render service hosts
+    # both API and UI (same origin, no CORS).
+    frontend_dist: str = ""
 
     @field_validator("cors_origins", mode="before")
     @classmethod
